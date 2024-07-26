@@ -20,7 +20,7 @@ COPY files/nginx.conf /etc/nginx/nginx.conf
 ADD files/start.sh /start.sh
 
 # Add docker configuration
-LABEL version="0.0.1"
+LABEL version="0.0.2"
 LABEL permissions='{\
   "NetworkMode": "host",\
   "HostConfig": {\

@@ -17,22 +17,22 @@ find_package(catkin REQUIRED COMPONENTS
   roslib
   roslaunch
   # uuv_gazebo_ros_plugins_msgs
-  nav_msgs
+  # nav_msgs
   geometry_msgs
-  message_generation
+  # message_generation
   tf
   std_msgs
-  gazebo_msgs
-  genmsg
+  # gazebo_msgs
+  # genmsg
   sensor_msgs
-  pcl_ros
+  # pcl_ros
 )
 
-find_package(Eigen3 REQUIRED)
+# find_package(Eigen3 REQUIRED)
 # find_package(yaml-cpp REQUIRED)
-find_package(gazebo_msgs REQUIRED)
+# find_package(gazebo_msgs REQUIRED)
 # find_package(PCL 1.8.1 REQUIRED)
-find_package(OpenCV REQUIRED)
+# find_package(OpenCV REQUIRED)
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -50,7 +50,7 @@ find_package(OpenCV REQUIRED)
 generate_messages(
   DEPENDENCIES
   std_msgs
-  nav_msgs
+  # nav_msgs
   geometry_msgs
   )
 
@@ -120,7 +120,7 @@ generate_messages(
 include_directories(
   include
   ${catkin_INCLUDE_DIRS}
-  ${OpenCV_INCLUDE_DIRS}
+  # ${OpenCV_INCLUDE_DIRS}
 )
 
 catkin_install_python(PROGRAMS scripts/ahrs_publisher.py
